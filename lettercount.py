@@ -13,10 +13,10 @@ ascii_character_count_list = [0]*128
 for i in range(len(data)):
     index = ord(data[i].lower())
     ascii_character_count_list[index] += 1
-
-# in case you are questioning how long the alphabet is
-alphabet = list("abcdefghijklmnopqrstuvwxyz")
+    
+# cut up alphabet
+alphabet = ascii_character_count_list[97:123]
 
 # ASCII character for a starts at 97
 for i in range(len(alphabet)):
-    print ascii_character_count_list[i + 97] 
+    print alphabet[i] 
